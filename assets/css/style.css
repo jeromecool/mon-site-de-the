@@ -1,0 +1,449 @@
+/*
+information document
+========================
+document tea théme
+version: 1.0.0
+Author: jerome
+*/
+
+
+/*
+    COLOR
+==============
+default body text #eeeeee
+
+*/
+
+
+/* 
+      FONTS
+=============
+DEFAULT arial
+*/
+
+
+/*
+       DIRECTORY
+==================
+DEFAULT
+    1-GLOBAL
+    2-HEADER
+        1-h1
+        2-p
+    3-SECTION
+
+    4-FOOTER
+*/
+
+
+/*
+    GLOBAL
+=====================
+*/
+
+html {
+    background-color: #fff;
+}
+
+.container {
+    margin-bottom: 50px;
+}
+
+h1 h2 h3 h4 h5 {
+    font-family: "lato", "Arial", "sans-serif";
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    font-weight: 300;
+    word-spacing: 8px;
+}
+
+h1 {
+    color: #eee;
+}
+
+h2 {
+    color: #333333;
+    text-align: center;
+    font-size: 250%;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+h2::after {
+    display: block;
+    height: 2px;
+    background-color: green;
+    width: 100px;
+    content: '';
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+h3 {
+    font-size: 160%;
+}
+
+h4 {
+    font-size: 160%;
+}
+
+h5 {
+    color: white;
+    text-align: center;
+    font-size: 250%;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+h5::after {
+    display: block;
+    height: 2px;
+    background-color: white;
+    width: 100px;
+    content: '';
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+p {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+
+/*    HEADER
+===============
+*/
+
+header {
+    background-image: linear-gradient(rgba(209, 60, 15, 0.26), rgba(193, 35, 241, 0.26)), url(../images/header.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.home-title {
+    top: 30%;
+    position: absolute;
+    width: auto;
+}
+
+.home-title h1 {
+    font-size: 340%;
+    color: #fff;
+}
+
+.home-title h1 span {
+    font-weight: 700;
+}
+
+.home-title p {
+    color: #ffffff;
+}
+
+
+/* button
+===================================================*/
+
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 1s color 1s border 1s;
+}
+
+.btn-full {
+    background-color: azure;
+    color: #5ee077;
+    margin-right: 15px;
+}
+
+.btn-ghost {
+    border: #fff solid 1px;
+    color: #fff;
+}
+
+.btn-full:hover {
+    background-color: #5ee077;
+    color: #fff;
+}
+
+.btn-ghost:hover {
+    background-color: #5ee077;
+    color: #fff;
+    border: 1px solid #5ee077;
+}
+
+
+/*SECTION
+==============
+*/
+
+.plus-produit {
+    margin: 20px 0;
+}
+
+.plus-produit:hover .produit-icon {
+    color: #575757;
+    transform: translateX(20px);
+}
+
+.produit-img {
+    image-orientation: flip;
+    max-width: 100%;
+}
+
+.famille-the img {
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    width: 110%;
+}
+
+.famille-the H4 {
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+}
+
+.famille-the P {
+    margin-left: 5px;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 12px;
+}
+
+
+/* font des famille de the
+================================*/
+
+.font {
+    background-color: red;
+    border-radius: 5%;
+    width: 200%;
+}
+
+.font2 {
+    position: relative;
+    margin-bottom: 20%;
+    background-color: #ffffff;
+    border-color: #000000;
+    border-width: 1px;
+    border: solid;
+    border-radius: 5%;
+    box-shadow: 3px 3px 0px 0px #000000;
+}
+
+
+/*icon
+==============
+*/
+
+.produit-icon {
+    font-size: 34px;
+    color: #0c950c;
+    transition: all 1s;
+}
+
+
+/* galerie photo
+==============================*/
+
+.photos-galerie-defaut {
+    height: 300px;
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    border-radius: 5%;
+    margin-bottom: 50px;
+}
+
+.galerie-titre h4 {
+    color: #fff;
+    font-family: fantasy, arial, sans-serif;
+    font-size: 20px;
+}
+
+
+/* avis client
+==============================*/
+
+.client {
+    background-image: url(../images/the-paysage.jpg), linear-gradient(rgba(209, 60, 15, 0.26), rgba(193, 35, 241, 0.26));
+    background-size: cover;
+    background-attachment: fixed;
+    margin-bottom: 50px;
+}
+
+.client-profil {
+    color: white;
+    font-family: Georgia, Times, sans-serif;
+    text-align: center;
+}
+
+blockquote {
+    margin-top: 80px;
+    margin: 5px;
+    font-style: italic;
+    line-height: 130%;
+    color: #fff;
+    font: bold;
+}
+
+blockquote:before {
+    content: "\201C";
+    font-size: 800%;
+    font-family: "sanchez", serif;
+    position: absolute;
+    top: 0px;
+    left: 5px;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 50px;
+}
+
+cite {
+    top: 10px;
+    display: block;
+    font-size: 90%;
+    margin-top: 20px;
+}
+
+cite img {
+    border-radius: 50%;
+    height: 50px;
+    margin-right: 50px;
+    position: relative;
+    margin-left: -60%;
+}
+
+
+/* tableaux des prix
+==============================*/
+
+.packs {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.packs h3 {
+    color: green;
+    font-weight: 400;
+}
+
+.packs h4 {
+    font-size: 200%;
+    font-weight: 100;
+}
+
+.pack span {
+    font-weight: 100;
+    font-size: 40%;
+    position: relative;
+}
+
+.pack-premium {
+    background-color: #22b922;
+}
+
+.pack-title-premium {
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    background-color: #fff;
+    color: green;
+    border-radius: 10px;
+    padding: 2px;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.packs-title {
+    padding: 10px 10px 0 10px;
+    border-bottom: 1px solid #e3e0e0;
+}
+
+.pack-content ul {
+    list-style: none;
+    padding: 20px;
+    font-weight: 300;
+    line-height: 35px;
+}
+
+.pack-content ul li i {
+    font-size: 90%;
+    margin-right: 10px;
+}
+
+.packs-signup {
+    text-align: center;
+}
+
+.packs-signup:hover .btn-pack {
+    background-color: #2a962a;
+    color: #fff;
+}
+
+.btn-pack {
+    background-color: greenyellow;
+    color: #fff;
+    height: 50px;
+    margin: 30px;
+}
+
+
+/*CONTACT
+===============
+*/
+
+.contact-form {
+    margin-bottom: 30px;
+}
+
+.contact-message {
+    width: 100%;
+}
+
+.btn-contact {
+    background-color: green;
+    color: #fff;
+}
+
+.map {
+    position: relative;
+    padding-bottom: 75%;
+    height: 0;
+    overflow: hidden;
+}
+
+.map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+/*FOOTER
+===============
+*/
+
+footer {
+    background-color: #2c2c2c;
+    color: #fff;
+    height: 60px;
+    padding: 20px 20px;
+}
+
+.copyright {
+    text-align: center;
+}
+
+.copyright a {
+    color: #fff;
+}
